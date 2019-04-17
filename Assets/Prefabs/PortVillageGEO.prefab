@@ -11017,6 +11017,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3771666204790348501}
+  - component: {fileID: 8189518648525645464}
+  - component: {fileID: 1091645711743658719}
   - component: {fileID: 3771666204790348500}
   - component: {fileID: 3771666204790348503}
   - component: {fileID: 3771666204790348502}
@@ -11043,6 +11045,37 @@ Transform:
   m_Father: {fileID: 3771666205888001520}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8189518648525645464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666204790348499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da291dfcf57e7f46843a75f8a5e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Building
+    sentences:
+    - Sentence one
+    - Sentence two
+--- !u!114 &1091645711743658719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666204790348499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Building
+  descriptionText: It's a building.
 --- !u!33 &3771666204790348500
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15421,6 +15454,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3771666205616191830}
+  - component: {fileID: 894501640202461600}
+  - component: {fileID: 1785483789240281251}
   - component: {fileID: 3771666205616191825}
   - component: {fileID: 3771666205616191824}
   - component: {fileID: 3771666205616191827}
@@ -15447,6 +15482,37 @@ Transform:
   m_Father: {fileID: 3771666205888001520}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894501640202461600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666205616191820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da291dfcf57e7f46843a75f8a5e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Home
+    sentences:
+    - Grove Street, Home.
+    - Least it was 'til I fucked everything up.
+--- !u!114 &1785483789240281251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666205616191820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Home
+  descriptionText: Grove Street
 --- !u!33 &3771666205616191825
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20109,6 +20175,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3771666206238857496}
+  - component: {fileID: 5737272058347386669}
+  - component: {fileID: 1486640945763709027}
   - component: {fileID: 3771666206238857499}
   - component: {fileID: 3771666206238857498}
   - component: {fileID: 3771666206238857493}
@@ -20135,6 +20203,37 @@ Transform:
   m_Father: {fileID: 3771666205888001520}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5737272058347386669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666206238857494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da291dfcf57e7f46843a75f8a5e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Building
+    sentences:
+    - Sentence one
+    - Sentence two
+--- !u!114 &1486640945763709027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666206238857494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Building
+  descriptionText: It's a building.
 --- !u!33 &3771666206238857499
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20455,6 +20554,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3771666206266105368}
+  - component: {fileID: 8715073801832132017}
+  - component: {fileID: 3184510862139564223}
   - component: {fileID: 3771666206266105371}
   - component: {fileID: 3771666206266105370}
   - component: {fileID: 3771666206266105365}
@@ -20481,6 +20582,37 @@ Transform:
   m_Father: {fileID: 3771666205888001520}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8715073801832132017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666206266105366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da291dfcf57e7f46843a75f8a5e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Building
+    sentences:
+    - Sentence one
+    - Sentence two
+--- !u!114 &3184510862139564223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666206266105366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Building
+  descriptionText: It's a building.
 --- !u!33 &3771666206266105371
 MeshFilter:
   m_ObjectHideFlags: 0

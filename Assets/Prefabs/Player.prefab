@@ -100,6 +100,8 @@ MonoBehaviour:
   playerTransform: {fileID: 2467264274543401783}
   verticalClampMin: -35
   verticalClampMax: 60
+  obstruction: {fileID: 0}
+  zoomSpeed: 2
 --- !u!1 &2467264274375697393
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +114,7 @@ GameObject:
   - component: {fileID: 2467264274375697293}
   - component: {fileID: 2467264274375697294}
   - component: {fileID: 2467264274375697295}
+  - component: {fileID: 4433078884202068708}
   m_Layer: 0
   m_Name: Direction
   m_TagString: Untagged
@@ -191,6 +194,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4433078884202068708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2467264274375697393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79aa1ddf7369c6a498efa4194941fef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxActivateDistance: 3
+  lookedAtObjectText: {fileID: 0}
 --- !u!1 &2467264274543401789
 GameObject:
   m_ObjectHideFlags: 0
