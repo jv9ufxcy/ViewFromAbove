@@ -10044,9 +10044,11 @@ MonoBehaviour:
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges:
-  - a: 1
-    b: 3
-  m_SelectedVertices: 0100000003000000
+  - a: 15
+    b: 14
+  - a: 0
+    b: 0
+  m_SelectedVertices: 0f0000000e0000000000000000000000
 --- !u!64 &3771666204617030648
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10384,6 +10386,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3771666204741082328}
   - component: {fileID: 3771666204741082331}
+  - component: {fileID: 5050604720907350050}
+  - component: {fileID: 611712577866047374}
   - component: {fileID: 3771666204741082330}
   - component: {fileID: 3771666204741082325}
   - component: {fileID: 3771666204741082324}
@@ -10438,6 +10442,40 @@ MonoBehaviour:
   m_EditMode: 0
   m_FlipNormals: 0
   isOnGrid: 1
+--- !u!114 &5050604720907350050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666204741082326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Mira's House
+  descriptionText: 
+--- !u!114 &611712577866047374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666204741082326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da291dfcf57e7f46843a75f8a5e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Mirabelle's House
+    sentences:
+    - Mirabelle and her family used to live here, this town feels so empty without
+      them.
+    - I remember she used to always gross me out with her ideas of fish flavored ice
+      cream.
+    - I miss her, this town feels so empty now.
 --- !u!33 &3771666204741082330
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10770,8 +10808,8 @@ MonoBehaviour:
   - {x: 2, y: 0, z: -7}
   - {x: 7, y: 0, z: -7}
   - {x: 7, y: 0, z: 5}
-  - {x: 12, y: 0, z: 5}
-  - {x: 12, y: 0, z: 11}
+  - {x: 15, y: 0, z: 5}
+  - {x: 15, y: 0, z: 11}
   - {x: 4, y: 0, z: 11}
   - {x: -0, y: 0, z: 7}
   - {x: 4, y: -1, z: 11}
@@ -10786,16 +10824,16 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 12, y: -1, z: 11}
   - {x: 12, y: -1, z: 5}
-  - {x: 12, y: 0, z: 11}
-  - {x: 12, y: 0, z: 5}
+  - {x: 15, y: 0, z: 11}
+  - {x: 15, y: 0, z: 5}
   - {x: 12, y: -1, z: 11}
   - {x: 12, y: -1, z: 5}
-  - {x: 12, y: 0, z: 5}
+  - {x: 15, y: 0, z: 5}
   - {x: 7, y: 0, z: 5}
   - {x: 12, y: -1, z: 5}
   - {x: 7, y: -1, z: 5}
   - {x: 4, y: 0, z: 11}
-  - {x: 12, y: 0, z: 11}
+  - {x: 15, y: 0, z: 11}
   - {x: 4, y: -1, z: 11}
   - {x: 12, y: -1, z: 11}
   - {x: 2, y: 0, z: -0}
@@ -10843,8 +10881,8 @@ MonoBehaviour:
   - {x: 2, y: -7}
   - {x: 7, y: -7}
   - {x: 7, y: 5}
-  - {x: 12, y: 5}
-  - {x: 12, y: 11}
+  - {x: 15, y: 5}
+  - {x: 15, y: 11}
   - {x: 4, y: 11}
   - {x: 0, y: 7}
   - {x: -4, y: 11}
@@ -10859,16 +10897,16 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: -12, y: 11}
   - {x: -12, y: 5}
-  - {x: 11, y: 0}
-  - {x: 5, y: 0}
-  - {x: 11, y: -1}
-  - {x: 5, y: -1}
-  - {x: 12, y: 0}
+  - {x: -14.230249, y: 11}
+  - {x: -14.230249, y: 5}
+  - {x: -11.067972, y: 11}
+  - {x: -11.067972, y: 5}
+  - {x: 15, y: 0}
   - {x: 7, y: 0}
   - {x: 12, y: -1}
   - {x: 7, y: -1}
   - {x: -4, y: 0}
-  - {x: -12, y: 0}
+  - {x: -15, y: 0}
   - {x: -4, y: -1}
   - {x: -12, y: -1}
   - {x: 2, y: 0}
@@ -10934,10 +10972,10 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
-  - {x: 0, y: 0, z: 1, w: -1}
+  - {x: -0.9486833, y: -0.31622776, z: 0, w: -1}
+  - {x: -0.9486833, y: -0.31622776, z: 0, w: -1}
+  - {x: -0.9486833, y: -0.31622776, z: 0, w: -1}
+  - {x: -0.9486833, y: -0.31622776, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
@@ -10992,8 +11030,10 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 9
+    b: 8
+  m_SelectedVertices: 0900000008000000
 --- !u!64 &3771666204741082327
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11058,10 +11098,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Building
+    name: Medicine Shop
     sentences:
-    - Sentence one
-    - Sentence two
+    - The family that owned this place were nice enough to take care of anyone wounded
+      in the autoamata attacks.
+    - Then they all just up and left.
+    - It's about time I do the same.
 --- !u!114 &1091645711743658719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11074,7 +11116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Building
+  nameText: Medicine Shop
   descriptionText: It's a building.
 --- !u!33 &3771666204790348500
 MeshFilter:
@@ -15497,8 +15539,9 @@ MonoBehaviour:
   dialogue:
     name: Home
     sentences:
-    - Grove Street, Home.
-    - Least it was 'til I fucked everything up.
+    - It just made sense for my parents to take the closest house to the sea. It sure
+      helped me hold out here as long as I could.
+    - Sorry I couldn't make the most of our little fishing village like you two did.
 --- !u!114 &1785483789240281251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15512,7 +15555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Home
-  descriptionText: Grove Street
+  descriptionText: Fishing Shack
 --- !u!33 &3771666205616191825
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15808,8 +15851,12 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  m_SelectedVertices: 00000000000000000000000000000000
 --- !u!64 &3771666205616191821
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20216,10 +20263,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Building
+    name: Church
     sentences:
-    - Sentence one
-    - Sentence two
+    - My Dad made sure to come here before every fishing trip.
+    - The pastor was the first to try to protect us from the automata
 --- !u!114 &1486640945763709027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20232,7 +20279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Building
+  nameText: Church
   descriptionText: It's a building.
 --- !u!33 &3771666206238857499
 MeshFilter:
@@ -20595,7 +20642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Building
+    name: Mayor's Residence
     sentences:
     - Sentence one
     - Sentence two
@@ -20907,17 +20954,9 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 03000000
-  m_SelectedEdges:
-  - a: 12
-    b: 13
-  - a: 14
-    b: 12
-  - a: 13
-    b: 15
-  - a: 15
-    b: 14
-  m_SelectedVertices: 0c0000000d0000000e0000000f000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!64 &3771666206266105367
 MeshCollider:
   m_ObjectHideFlags: 0

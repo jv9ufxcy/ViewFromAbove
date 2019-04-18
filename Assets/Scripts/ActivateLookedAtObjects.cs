@@ -24,7 +24,7 @@ public class ActivateLookedAtObjects : MonoBehaviour
     {
         if (objectLookedAt != null)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Submit"))
             {
                 objectLookedAt.DoActivate();
             }
@@ -34,7 +34,7 @@ public class ActivateLookedAtObjects : MonoBehaviour
     private void UpdateLookedAtObjectText()
     {
         if (objectLookedAt != null)
-            lookedAtObjectText.text = objectLookedAt.NameText;
+            lookedAtObjectText.text = objectLookedAt.NameText+ " (E)";
         else
             lookedAtObjectText.text = "";
     }

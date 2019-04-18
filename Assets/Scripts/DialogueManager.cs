@@ -8,13 +8,16 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public Animator anim;
     
     private Queue<string> sentences;
 
     [SerializeField] private TPSCharacterController characterController;
     [SerializeField] private TPSCameraController cameraController;
+    [SerializeField] private ActivateLookedAtObjects activateObj;
 
     private bool isDialogueBoxVisible;
+    [SerializeField] private float typingSpeed=1f;
 
     private void Awake()
     {
@@ -23,8 +26,9 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        characterController = GetComponent<TPSCharacterController>();
-        cameraController = GetComponent<TPSCameraController>();
+        characterController = characterController.GetComponent<TPSCharacterController>();
+        cameraController = cameraController.GetComponent<TPSCameraController>();
+        activateObj = activateObj.GetComponent<ActivateLookedAtObjects>();
         sentences = new Queue<string>();
     }
     private void Update()
@@ -34,6 +38,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         isDialogueBoxVisible = true;
+        anim.SetBool("isOpen", isDialogueBoxVisible);
         Debug.Log("Starting dialogue with " + dialogue.name);
 
         nameText.text = dialogue.name;
@@ -56,13 +61,25 @@ public class DialogueManager : MonoBehaviour
         }
         string sentence = sentences.Dequeue();
         Debug.Log(sentence);
-        dialogueText.text = sentence;
+        //dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(Type(sentence));
+    }
+    IEnumerator Type(string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
     }
 
     private void EndDialogue()
     {
         Debug.Log("End of Dialogue");
         isDialogueBoxVisible = false;
+        anim.SetBool("isOpen", isDialogueBoxVisible);
     }
     private void UpdatePlayer()
     {
@@ -77,8 +94,8 @@ public class DialogueManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
 
-        //characterController.enabled = !isDialogueBoxVisible;
-        //cameraController.enabled = characterController.enabled;
-
+        characterController.enabled = !isDialogueBoxVisible;
+        cameraController.enabled = characterController.enabled;
+        activateObj.enabled = characterController.enabled;
     }
 }
