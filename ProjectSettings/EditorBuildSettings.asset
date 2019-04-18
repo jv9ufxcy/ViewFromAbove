@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Persistent.unity
+    guid: 5bc46baddbef90d44907c4f084f161a7
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: e3ee1fa62a671124093660a9cbcdcb81
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: ed5ff796742326c4aa7756eea17c5773
+  - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: 0b6285674e9b901428d6484fac0f2dd6
   m_configObjects: {}
