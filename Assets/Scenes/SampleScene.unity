@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964127, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -705,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &170076734
 Light:
   m_ObjectHideFlags: 0
@@ -11344,6 +11344,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4433078884202068708, guid: 400eaf34838d3724a82eced58f265e66,
+        type: 3}
+      propertyPath: lookedAtObjectText
+      value: 
+      objectReference: {fileID: 638992746}
     - target: {fileID: 2467264274543401785, guid: 400eaf34838d3724a82eced58f265e66,
         type: 3}
       propertyPath: playerSpeed
@@ -11409,11 +11414,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4433078884202068708, guid: 400eaf34838d3724a82eced58f265e66,
-        type: 3}
-      propertyPath: lookedAtObjectText
-      value: 
-      objectReference: {fileID: 638992746}
     - target: {fileID: 2467264274339447070, guid: 400eaf34838d3724a82eced58f265e66,
         type: 3}
       propertyPath: m_LocalPosition.z
