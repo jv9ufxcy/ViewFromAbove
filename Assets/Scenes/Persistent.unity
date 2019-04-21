@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allRoundData:
   - name: Round Zero
-    timeLimitInSeconds: 30
+    timeLimitInSeconds: 60
     pointsAddedForCorrectAnswer: 10
     questions:
     - questionText: What is the primary export of Koiyo Village?
@@ -178,15 +178,21 @@ MonoBehaviour:
     - questionText: What is the name of Koiyo village's largest fishing vessel?
       answers:
       - answerText: Empress Josephine
-        isCorrect: 1
-      - answerText: Catopuma Temminckii
         isCorrect: 0
+      - answerText: Catopuma Temminckii
+        isCorrect: 1
       - answerText: White Dove
         isCorrect: 0
       - answerText: Morbid Saint
         isCorrect: 0
-    - questionText: 
-      answers: []
+    - questionText: How many buildings stand in Koiyo village.
+      answers:
+      - answerText: 4
+        isCorrect: 0
+      - answerText: 5
+        isCorrect: 1
+      - answerText: 6
+        isCorrect: 0
 --- !u!4 &113690404
 Transform:
   m_ObjectHideFlags: 0
