@@ -21,7 +21,7 @@ public class SimpleObjectPool : MonoBehaviour
             pooledObject.pool = this;
         }
         spawnedGameObject.transform.SetParent(null);
-        gameObject.SetActive(true);
+        spawnedGameObject.SetActive(true);
         return spawnedGameObject;
     }
     public void ReturnObject(GameObject toReturn)

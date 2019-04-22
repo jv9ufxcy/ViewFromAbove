@@ -9760,6 +9760,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3771666204617030652}
+  - component: {fileID: 5664746320837406539}
+  - component: {fileID: 4051688606460441986}
   - component: {fileID: 3771666204617030655}
   - component: {fileID: 3771666204617030654}
   - component: {fileID: 3771666204617030649}
@@ -9785,6 +9787,39 @@ Transform:
   m_Father: {fileID: 3771666205888001520}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5664746320837406539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666204617030651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da291dfcf57e7f46843a75f8a5e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Jo's House
+    sentences:
+    - I knew Jo from back when we were kids.
+    - She used to gross me out with her weird "fish ice cream" invention, never actually
+      tried it before.
+    - I hope her family made it out safe, I miss seeing her around.
+--- !u!114 &4051688606460441986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771666204617030651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Jo's House
+  descriptionText: 
 --- !u!33 &3771666204617030655
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11101,8 +11136,9 @@ MonoBehaviour:
     name: Medicine Shop
     sentences:
     - The family that owned this place were nice enough to take care of anyone wounded
-      in the autoamata attacks.
-    - Then they all just up and left.
+      in the automata attacks, lord knows how they could afford to do so for so long.
+    - Eventually they just up and left in their boat. Even brought their cat with
+      them.
     - It's about time I do the same.
 --- !u!114 &1091645711743658719
 MonoBehaviour:
@@ -20644,8 +20680,9 @@ MonoBehaviour:
   dialogue:
     name: Mayor's Residence
     sentences:
-    - Sentence one
-    - Sentence two
+    - Our mayor tried his best to enlist other cities to help us against the automata
+      forces.
+    - Guess we ran out of value to them when the fishermen left us.
 --- !u!114 &3184510862139564223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20658,7 +20695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52220654c79c35e4584204b2be577456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Building
+  nameText: Mayor's Residence
   descriptionText: It's a building.
 --- !u!33 &3771666206266105371
 MeshFilter:
