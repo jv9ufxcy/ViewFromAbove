@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
+    [SerializeField] private GameObject playerTransform;
     [SerializeField] private Transform respawnPos;
 
     private void OnTriggerEnter(Collider other)
